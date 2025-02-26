@@ -4,6 +4,7 @@ import Counter from './components/Counter'
 import { RootState } from './store/store';
 import UserComponent from './components/UserComponent';
 import UserComponentWithCreateAPI from './components/UserComponentWithCreateAPI';
+import GitHubCorner from './components/GithubCorner';
 
 function App() {
   const count = useSelector((state: RootState) => state.counter.value);
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <main>
+        <GitHubCorner />
 
         <h1>
           Let's discuss Redux
